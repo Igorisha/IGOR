@@ -1,0 +1,50 @@
+﻿<Window x:Class="Окно_для_подготовки_к_аккр.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Окно_для_подготовки_к_аккр"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="Aqua" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Фамилия"  HorizontalAlignment="Left" Margin="33,0,0,0" Grid.Row="1" VerticalAlignment="Center" Height="42" Width="200" FontSize="15" FontWeight="Medium"/>
+                <Label Content="Имя" HorizontalAlignment="Left" Margin="33,0,0,0" Grid.Row="2"  VerticalAlignment="Center" Height="42" Width="200" FontSize="15" FontWeight="Medium"/>
+                <Label Content="Отчество"  HorizontalAlignment="Left" Margin="33,0,0,0" Grid.Row="3"  VerticalAlignment="Center" Height="42" Width="200" FontSize="15" FontWeight="Medium"/>
+                <Label Content="Номер смены"  HorizontalAlignment="Left" Margin="33,0,0,0" Grid.Row="4" VerticalAlignment="Center" Height="42" Width="200" FontSize="15" FontWeight="Medium"/>
+                <Label Content="Дата начала смены"  HorizontalAlignment="Left" Margin="33,0,0,0" Grid.Row="5" VerticalAlignment="Center" Height="42" Width="200" FontSize="15" FontWeight="Medium"/>
+                <Button Grid.Column="1" Content="Далее" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" VerticalAlignment="Center" Width="100" Height="35"  FontSize="15" FontWeight="Medium" Background="Black" Foreground="White"/>
+                <Button Grid.Column="1" Content="Отменить" HorizontalAlignment="Left" Margin="133,0,0,0" Grid.Row="6" VerticalAlignment="Center" Width="100" Height="35"  FontSize="15" FontWeight="Medium" Background="Black" Foreground="White"/>
+                <TextBox x:Name="Fam" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="42" Width="200" FontSize="15"/>
+                <TextBox  x:Name="Im" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="42" Width="200" FontSize="15"/>
+                <TextBox x:Name="Otch" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="42" Width="200" FontSize="15"/>
+                <TextBox x:Name="Number" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="42" Width="200" FontSize="15"/>
+                <TextBox x:Name="Data" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="42" Width="200" FontSize="15" />
+                <Label Grid.Column="1" Content="Сотрудники" HorizontalAlignment="Center" VerticalAlignment="Center" Width="149" Height="42" FontSize="25" FontWeight="Medium"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
